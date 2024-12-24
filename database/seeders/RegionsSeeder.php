@@ -2,10 +2,6 @@
 
 namespace SextaNet\LaravelChileGeo\Database\Seeders;
 
-use App\Models\Commune;
-use App\Models\Country;
-use App\Models\Region;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -151,7 +147,7 @@ class RegionsSeeder extends Seeder
             'Maipú' => 7,
             'Ñuñoa' => 7,
             'Pedro Aguirre Cerda' => 7,
-            'Peñalolén' => 7,   
+            'Peñalolén' => 7,
             'Providencia' => 7,
             'Pudahuel' => 7,
             'Quilicura' => 7,
@@ -380,20 +376,20 @@ class RegionsSeeder extends Seeder
             'Guaitecas' => 15,
             'Cochrane' => 15,
             "O'Higgins" => 15,
-            "Tortel" => 15,
-            "Chile Chico" => 15,
-            "Río Ibáñez" => 15,
-            "Punta Arenas" => 16,
-            "Laguna Blanca" => 16,
-            "Río Verde" => 16,
-            "San Gregorio" => 16,
-            "Cabo de Hornos" => 16,
-            "Antártica" => 16,
-            "Porvener" => 16,
-            "Primavera" => 16,
-            "Timaukel" => 16,
-            "Natales" => 16,
-            "Torres del Paine" => 16,
+            'Tortel' => 15,
+            'Chile Chico' => 15,
+            'Río Ibáñez' => 15,
+            'Punta Arenas' => 16,
+            'Laguna Blanca' => 16,
+            'Río Verde' => 16,
+            'San Gregorio' => 16,
+            'Cabo de Hornos' => 16,
+            'Antártica' => 16,
+            'Porvener' => 16,
+            'Primavera' => 16,
+            'Timaukel' => 16,
+            'Natales' => 16,
+            'Torres del Paine' => 16,
         ];
 
         $formatted_communes = array_map(function ($commune, $region_id) {
