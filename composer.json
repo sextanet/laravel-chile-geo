@@ -36,7 +36,8 @@
     "autoload": {
         "psr-4": {
             "SextaNet\\LaravelChileGeo\\": "src/",
-            "SextaNet\\LaravelChileGeo\\Database\\Factories\\": "database/factories/"
+            "SextaNet\\LaravelChileGeo\\Database\\Factories\\": "database/factories/",
+            "SextaNet\\LaravelChileGeo\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "autoload-dev": {
