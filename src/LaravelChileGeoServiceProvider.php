@@ -2,9 +2,9 @@
 
 namespace SextaNet\LaravelChileGeo;
 
+use SextaNet\LaravelChileGeo\Commands\LaravelChileGeoCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use SextaNet\LaravelChileGeo\Commands\LaravelChileGeoCommand;
 
 class LaravelChileGeoServiceProvider extends PackageServiceProvider
 {
