@@ -8,11 +8,10 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('laravel_chile_geo_table', function (Blueprint $table) {
+        Schema::create('chile_geo_regions', function (Blueprint $table) {
             $table->id();
-
-            // add fields
-
+            $table->unsignedBigInteger('chile_geo_country_id')->default(config('chile-geo.chile_geo_country_id'));
+            $table->string('name');
             $table->timestamps();
         });
     }

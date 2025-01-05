@@ -2,10 +2,6 @@
 
 namespace SextaNet\LaravelChileGeo\Database\Seeders;
 
-use App\Models\Commune;
-use App\Models\Country;
-use App\Models\Region;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -373,7 +369,7 @@ class RegionsSeeder extends Seeder
             'Futaleufú' => 14,
             'Hualaihue' => 14,
             'Palena' => 14,
-            'Coihayque' => 15,
+            'Coyhaique' => 15,
             'Lago Verde' => 15,
             'Aisén' => 15,
             'Cisnes' => 15,
