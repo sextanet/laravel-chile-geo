@@ -5,7 +5,7 @@ namespace SextaNet\LaravelChileGeo\Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class RegionsSeeder extends Seeder
+class ChileGeoSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -34,7 +34,7 @@ class RegionsSeeder extends Seeder
         $formatted_regions = array_map(function ($region) {
             return [
                 'name' => $region,
-                'country_id' => config('chile-geo.chile_geo_country_id'),
+                'country_id' => $this->getCountryId('Chile'),
                 'updated_at' => now(),
                 'created_at' => now(),
             ];
@@ -403,5 +403,14 @@ class RegionsSeeder extends Seeder
 
         DB::table(config('chile-geo.table_communes'))
             ->insert($formatted_communes);
+    }
+
+    public function getCountryId(string $name): string
+    {
+        $table_name = config('chile-geo.table_countries');
+
+        return DB::table($table_name)->where([
+            'name' => $name,
+        ])->first()->id;
     }
 }

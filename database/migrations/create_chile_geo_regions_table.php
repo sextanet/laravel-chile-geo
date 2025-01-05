@@ -10,7 +10,7 @@ return new class extends Migration
     {
         Schema::create('chile_geo_regions', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('chile_geo_country_id')->default(config('chile-geo.chile_geo_country_id'));
+            $table->unsignedBigInteger(config('chile_geo.table_countries'))->default(config('chile-geo.country_id'));
             $table->string('name');
             $table->timestamps();
         });
